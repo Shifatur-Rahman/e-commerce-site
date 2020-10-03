@@ -19,6 +19,9 @@
   min-height: 600px;
   width: 100%;
 }
+.topContent {
+  margin-top: 14rem;
+}
 
 .navTitle {
   font-family: "Montserrat", sans-serif;
@@ -32,12 +35,6 @@
   font-size: 25px;
   font-weight: 700;
   color: green !important;
-}
-
-.hello {
-  background: red;
-  font-size: 25px;
-  height: 500px;
 }
 
 .navMenu {
@@ -83,9 +80,6 @@
   font-size: 18px;
   color: black !important;
 }
-.topContent {
-  margin-top: 14rem;
-}
 
 .title {
   font-family: "Montserrat", sans-serif;
@@ -102,9 +96,15 @@
 }
 
 /* Footer */
+.footer {
+  margin-top: 5rem;
+  box-shadow: 0 0 4px 0 rgba(0, 115, 230, 0.2);
+}
+
+.columnPadding {
+  padding: 4rem;
+}
 .apparelDes {
-  margin-left: 5rem;
-  margin-right: 5rem;
   text-align: justify;
   font-family: "Montserrat", sans-serif;
   font-size: 14px;
@@ -114,38 +114,93 @@
 .footerHeader {
   font-family: "Montserrat", sans-serif;
   font-size: 22px;
-  margin-bottom: 18px;
-  text-align: center;
+  margin-bottom: 15px;
+  padding-top: 15px;
+}
+.footerHeaderLink {
+  color: #666666;
+  font-family: "Raleway", sans-serif;
+  font-size: 15px;
+  font-weight: 400;
+  cursor: pointer;
+}
+.footerHeaderLink:hover {
+  color: #b3b3b3;
 }
 
+.footer2 {
+  padding: 1rem;
+}
 .connectIconFa {
   color: #0052cc;
   font-size: 22px;
+  cursor: pointer;
 }
 
 .connectIconYou {
   color: red;
   font-size: 25px;
+  cursor: pointer;
+}
+
+.connectIconWhats {
+  color: #47d147;
+  font-size: 25px;
+  cursor: pointer;
+}
+
+.connectIconFacebook {
+  color: #0052cc;
+  font-size: 35px;
+  cursor: pointer;
+}
+
+.connectIconYoutube {
+  color: red;
+  font-size: 35px;
+  cursor: pointer;
+  margin-left: 5px;
 }
 
 .connectIconWhatsApp {
   color: #47d147;
-  font-size: 25px;
+  font-size: 35px;
+  cursor: pointer;
+  margin-left: 5px;
 }
 
-/* 
-product */
+.connectIconTwitter {
+  color: #black;
+  font-size: 35px;
+  cursor: pointer;
+  margin-left: 5px;
+}
 
-.productOne {
-  background: url(../images/product_one.jpg);
-  background-size: cover;
-  background-repeat: no-repeat;
+.copyRightSection {
+  background-color: #e6e6e6;
   width: 100%;
-  height: 250px;
+  height: 150px;
 }
-.productOneMargin {
-  margin-top: 6rem;
+.footerLowerLink {
+  font-family: "Raleway", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  color: #404040;
 }
+
+.footerLowerLink:hover {
+  color: #8c8c8c;
+}
+
+.copyRightTitle {
+  font-family: "Montserrat", sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  color: black;
+}
+
+/* product */
+
 .productHeadTitle {
   margin-top: 4rem;
   margin-bottom: 4rem;
@@ -155,15 +210,243 @@ product */
   font-size: 30px;
 }
 
-.productCard {
-  padding: 60px 30px 60px 30px;
+.itemCard {
   box-shadow: 0 0 8px 0 rgba(0, 115, 230, 0.2);
+  padding: 30px 20px 10px;
+  border-radius: 5px;
+  margin: 5px;
+}
+
+.itemCard:hover {
+  box-shadow: 0 0 8px 0 rgba(20, 115, 200, 0.9);
+  transition: 0.5s;
+}
+
+.productImg {
+  height: 250px;
+  border-radius: 10px;
+}
+
+.cardBtn {
+  margin: auto;
+}
+.productCard {
+  margin-top: 10px;
 }
 
 .productCard:hover {
-  box-shadow: 0 0 8px 0 rgba(0, 115, 230, 0.5);
+  box-shadow: 0 0 8px 0 rgba(20, 115, 200, 0.5);
+  transition: 0.5s;
 }
 
 .services {
   margin-bottom: 3rem;
+  letter-spacing: 1px;
+}
+.sharee_one {
+  transform: scale(1);
+  transition: 0.3s ease-in-out;
+  cursor: pointer;
+}
+.sharee_one:hover {
+  transform: scale(1.5);
+}
+.starIcon {
+  font-size: 12px;
+  color: #ff9933;
+}
+.product-bottom h5 {
+  font-size: 15px;
+  padding-bottom: 10px;
+}
+.product-bottom p {
+  margin-top: 0;
+}
+.overlay {
+  display: block;
+  opacity: 0;
+  position: absolute;
+  top: 20%;
+  margin-left: 0;
+  width: 70px;
+}
+.product-top {
+  display: inline-block;
+  overflow: hidden;
+}
+
+.product-top:hover .overlay {
+  opacity: 1;
+  margin-left: 5%;
+  transition: 0.5s;
+}
+
+.overlay .cartIcon {
+  cursor: pointer;
+  background-color: #ffffff;
+  color: #000;
+  height: 30px;
+  width: 30px;
+  font-size: 20px;
+  padding: 7px;
+  margin: 5%;
+  margin-bottom: 5%;
+  border-radius: 5px;
+}
+.overlay .btn-warning {
+  background: transparent !important;
+  border: none !important;
+  box-shadow: none !important;
+}
+/* 
+
+topPage */
+
+.topFixedBannerPage {
+  background: url(../images/cloth_slider.jpg);
+  min-height: 400px;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+
+.topBannerOverlayPage {
+  background: rgba(0, 0, 0, 0.1);
+  position: absolute;
+  min-height: 400px;
+  width: 100%;
+}
+.topContentPage {
+  margin-top: 11rem;
+}
+
+.subTitlePage {
+  font-family: "Raleway", sans-serif;
+  color: green;
+  font-weight: 700;
+  font-size: 24px;
+}
+/* 
+Product */
+.productTitle {
+  font-family: "Raleway", sans-serif;
+  font-size: 15px;
+  font-weight: 500;
+}
+
+/* ProductDetailsPage */
+
+.app {
+  max-width: 1200px;
+  width: 100%;
+  margin: 100px auto;
+  box-shadow: 0 0 5px #ccc;
+}
+.details {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  padding: 30px 0;
+}
+
+.details .big-img {
+  max-width: 500px;
+  min-width: 290px;
+  overflow: hidden;
+  margin: 25px;
+}
+.big-img img {
+  width: 100%;
+  height: 100%;
+  max-height: 400px;
+  display: block;
+  object-fit: cover;
+}
+
+.details .box {
+  max-width: 500px;
+  min-width: 290px;
+  margin: 25px;
+}
+.box .row {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 15px;
+}
+
+.box .row h2 {
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+.box .row span {
+  color: crimson;
+}
+
+.box .colors {
+  width: 30px;
+  height: 30px;
+  border: 1px solid #333;
+  outline: none;
+  margin-right: 5px;
+  cursor: pointer;
+}
+.box p {
+  line-height: 1.5;
+  margin: 15px 0;
+}
+.thumb {
+  width: 100%;
+  height: 100px;
+  display: flex;
+  cursor: pointer;
+  margin: 10px 0;
+}
+
+.thumb img {
+  width: 90px;
+  height: 100%;
+  display: block;
+  object-fit: cover;
+  border: 1px solid #ddd;
+  margin-right: 5px;
+  opacity: 0.7;
+  border-radius: 5px;
+}
+
+.thumb img.active {
+  opacity: 1;
+  border: 1px solid lightseagreen;
+}
+
+.itemButton {
+  text-decoration: none;
+  color: #ffffff;
+}
+
+.itemButton:hover {
+  text-decoration: none;
+  color: #999999;
+}
+
+/* media query */
+
+@media only screen and (max-width: 768px) {
+  .copyRightSection {
+    height: 200px;
+  }
+}
+@media only screen and (max-width: 360px) {
+  .copyRightSection {
+    height: 300px;
+  }
+}
+@media (max-width: 500px) {
+  .thumb {
+    height: 50px;
+  }
+  .thumb img {
+    width: 50px;
+  }
 }

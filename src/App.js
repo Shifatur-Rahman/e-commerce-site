@@ -1,19 +1,14 @@
-import React from "react";
-import "./App.css";
-import TopBanner from "./components/topBanner/TopBanner";
-import TopNavigation from "./components/topNavigation/TopNavigation";
-import Footer from "./components/footer/Footer";
-import Services from "./components/services/Services";
 
-function App() {
+
+import React from "react";
+import AppRouter from "./router/AppRouter";
+import { BrowserRouter } from "react-router-dom";
+import HomePage from "./pages/HomePage.js";
+
+export default function App() {
   return (
-    <div className='App'>
-      <TopNavigation />
-      <TopBanner />
-      <Services />
-      <Footer />
-    </div>
+    <BrowserRouter>
+      <AppRouter />
+    </BrowserRouter>
   );
 }
-
-export default App;
